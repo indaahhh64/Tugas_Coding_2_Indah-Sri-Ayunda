@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Komunitas Teknologi</title>
+</head>
+<body>
+<h1>Formulir Pendaftaran Komunitas Teknologi</h1>
+<br>
+<form action="submit.html" method="post"></form>
+<fieldset>
+<legend>Data Pendaftaran</legend>
+<br>
+<!-- Bagian nama -->
+<label for="Username">Nama Lengkap:</label>
+<input type="text" id="Username" name="username" placeholder="Masukkan Nama Lengkap" required autocomplete="name">
+<br><br>
+<!-- Tulis email -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="email@gmail.com" required autocomplete="email">
+<br><br>
+<!-- Kata sandi -->
+<label for="password">Kata Sandi:</label>
+<input type="password" id="password" name="password" placeholder="Minimal 6 karakter" required pattern=".{6,}" autocomplete="new-password">
+<br><br>
+<!-- Tulis usia -->
+<label for="usia">Usia:</label>
+<input type="number" id="usia" name="usia" placeholder="Masukkan usia" min="15" max="60" required>
+<br><br>
+<!-- Tanggal lahir -->
+<label for="tanggal">Tanggal Lahir:</label>
+<input type="date" id="tanggal" name="tanggal" required>
+<br><br>
+<!-- Gender -->
+<label for="Jenis Kelamin">Jenis Kelamin:</label>
+<input type="radio" id="laki" name="gender" value="Laki-laki" required> Laki-laki
+<input type="radio" id="perempuan" name="gender" value="Perempuan" required> Perempuan
+<br><br>
+<!-- Minat -->
+<label for="minat">Minat:</label>
+<input type="checkbox" name="minat" value="AI"> AI
+<input type="checkbox" name="minat" value="Web"> Web
+<input type="checkbox" name="minat" value="IoT"> IoT
+<input type="checkbox" name="minat" value="Game"> Game
+<br><br>
+<!-- Nomor tel -->
+<label for="tel">Nomor Telepon:</label>
+<input type="tel" id="tel" name="tel" placeholder="08xxxxxxxxxx" pattern="[0-9]{10,13}" required autocomplete="tel">
+<br><br>
+<!-- Portofolio -->
+<label for="url">Link Portofolio:</label>
+<input type="url" id="url" name="url" placeholder="https://example.com">
+<br><br>
+<!-- PP -->
+<label for="file">Upload Foto Profil:</label>
+<input type="file" id="file" name="file"required>
+<br><br>
+<!-- Reset & submit -->
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+</body>
+</html>
